@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title> <strong> BLOCPOWER LIGHTING </strong> </title> 
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<p> <h2> Welcome to the lighting data entry form </h2> </p>
+		<p> If you are unsure about something, ask us for <a href="#help"> help</a>. </p>
+				<h2> Lighting Inventory </h2>
+		<form action=actiondestination.php method=post>
+			<p> Client Name: </p>
+			<p> <input type="text" name="client">  </p>
+			<p> Address: </p>
+			<p> <input type="text" name="address">  </p>
+			<p> This form is for: </p>
+			<p> <input type="radio" name="lighting" value="existing lighting"> existing lighting </p>
+			<p> <input type="radio" name="lighting" value="lighting retrofit"> lighting retrofits </p>
+			
+			<table> 
+				<tr>
+					<td> Location </td>
+					<td> Fixture Type </td>
+					<td> Fixture Quantity </td>
+					<td> Lamp Type </td>
+					<td> Lamp Information </td>
+					<td> Lamp Quantity </td>
+					<td> Wattage </td>
+					<td> Ballast Type </td>
+					<td> Ballast Model </td>
+					<td> Control Type </td>
+					
+				</tr>
+				<tr>
+					
+					<td> <input type="text" name="Location" </td>
+					<td> <select name="Fixture"> 
+						<option> Troffer </option>
+						<option> Wrap </option>
+						<option> Flush </option>
+						<option> Other </option>
+						<option> Track </option>
+						<option> Recessed Can </option>
+						<option> Recessed Troffer </option>
+						<option> Wallpack </option>
+						<option> Exit </option>
+						<option> Wall Sconce </option>
+						<option> Chandelier </option>
+						<option> Emergency </option>
+					
+					</select>
+					</td>
+					<td> <input type="text" name="fixquantity" value="1" </td>
+					<td> <select name="lamp">
+						<option> CFL </option>
+						<option> Incandescent </option>
+						<option> Linear Fluorescent </option>
+						<option> LED </option>
+						<option> Circline Fluorescent </option>
+						<option> Other </option>
+						<option> U Bend Fluorescent </option>
+						<option> Halogen Incandescent </option>
+						<option> High Intensity Discharge </option> 
+						<option> Other </option>
+						</select> 
+						</td>
+				<td> <input type="text" name="lampinfo" value="ex. 4' Philips T12">
+					<td> <input type="text" name="lampquantitiy" value="1" </td>
+						<td> <input =type"tedxt" name="watts"  </td>
+						<td> <select name="Ballasttype">
+							<option> Electronic </option>
+							<option> Magnetic </option>
+							<option> Universal </option>
+							<option> High Efficiency </option> 
+						</select>
+						</td>
+						<td> <input type="text" name="Ballastmodel">
+						</td>
+						<td> <select name="control">
+							<option> Dimmer </option>
+							<option> Light Sensor </option>
+							<option> Motion Sensor </option>
+							<option> Timer </option>
+							<option> Other </option> 
+						</select>
+						</td>
+						
+							
+				
+				</tr>
+			</table>
+		</form>
+
+					<p> <h3 id="help"> References: </h3> </p>
+					<ol> 
+					<li> Bonnie- </li>
+					<li> Claire- </li>
+					<li> Brian-  </li>
+					<li> Max-  </li>
+					</ol>
+
+				
+				
+					
+						
+						
+			
+					
+				
+			
