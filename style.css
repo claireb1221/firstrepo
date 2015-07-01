@@ -1,3 +1,4 @@
-h1 {color: rgba(199, 46, 3, 1);font-family: arial, sans-serif;padding: 20px; border-width: medium; border-color: black; border-style: solid;align-content: center}
+h1 {color: rgba(199, 46, 3, 1);font-family: arial, sans-serif;padding: 20px; border-width: 6px; border-color: black; border-style: solid;align-content: center; background-color: rgba(219, 218, 216, 1); background-size: 10px}
 body {font-family: helvetica, sans-serif; padding: 10px}
 a {color: red;}
+#ref {border-width: thin; padding: 10px; border-color: rgba(199, 46, 3, 1);}
