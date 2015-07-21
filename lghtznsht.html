@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
 	<head> 
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title> <strong> BLOCPOWER LIGHTING </strong> </title> 
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 	</head>
 	<body>
 		
-		<p> <h1> Welcome to the BlocPower Lighting Inventory Form </h1> </p>
+		<p> <h1> <strong> BlocPower Lighting Inventory Form </strong> </h1> </p>
 		<p> If you need <a href="#help"> help</a>, ask us! </p>
-				<h2> Lighting Inventory </h2>
+		<h2> Client Information </h2>
 		<form action=actiondestination.php method=post>
-			<p> Client Name: <input type="text" name="client">  </p>
-			<p> Address: <input type="text" name="address">  </p>
-			<p> This form is for: </p>
-			<p> <input type="radio" name="lighting" value="existing lighting"> existing lighting </p>
-			<p> <input type="radio" name="lighting" value="lighting retrofit"> lighting retrofits </p>
 			
-			<table> 
+			<p> Client Name: <input  type="text" name="client" placeholder="Name"</p>
+			<p> Address: <input  type="text" name="address" placeholder="Address">  </p>
+			<p> This form is for: </p>
+			<p> <input type="radio" name="lighting" value="existing lighting"> Existing Lighting </p>
+			<p> <input type="radio" name="lighting" value="lighting retrofit"> Lighting Retrofits </p>
+			
+		<h2> Lighting Inventory </h2>
+			<table class="table"> 
+				<tbody class="table-striped>tbody>tr">
 				<tr>
-					<td> # </td>
 					<td> Location </td>
 					<td> Fixture Type </td>
 					<td> Fixture Quantity </td>
@@ -29,11 +34,9 @@
 					<td> Ballast Type </td>
 					<td> Ballast Model/Factor </td>
 					<td> Control Type </td>
-					
 				</tr>
 				<tr>
-					<td> </td>
-					<td> <input type="text" name="Location" </td>
+					<td> <input type="text" name="Location" placeholder="Location"</td>
 					<td> <select name="Fixture"> 
 						<option> Troffer </option>
 						<option> Wrap </option>
@@ -74,7 +77,7 @@
 							<option> High Efficiency </option> 
 						</select>
 					</td>
-					<td> <input type="text" name="Ballastmodel">
+					<td> <input type="text" name="Ballastmodel" placeholder="Ballast Info">
 					</td>
 					<td> <select name="control">
 							<option> Dimmer </option>
@@ -85,6 +88,113 @@
 						</select>
 					</td>
 			    </tr>
+			    <tr>
+					<td> <input type="text" name="Location" placeholder="Location"</td>
+					<td> <select name="Fixture"> 
+						<option> Troffer </option>
+						<option> Wrap </option>
+						<option> Flush </option>
+						<option> Other </option>
+						<option> Track </option>
+						<option> Recessed Can </option>
+						<option> Recessed Troffer </option>
+						<option> Wallpack </option>
+						<option> Exit </option>
+						<option> Wall Sconce </option>
+						<option> Chandelier </option>
+						<option> Emergency </option>
+					
+					</select>
+					</td>
+					<td> <input type="text" name="fixquantity" value="1" </td>
+					<td> <select name="lamp">
+						<option> CFL </option>
+						<option> Incandescent </option>
+						<option> Linear Fluorescent </option>
+						<option> LED </option>
+						<option> Circline Fluorescent </option>
+						<option> Other </option>
+						<option> U Bend Fluorescent </option>
+						<option> Halogen Incandescent </option>
+						<option> High Intensity Discharge </option> 
+						<option> Other </option>
+						</select> 
+					</td>
+					<td> <input type="text" name="lampinfo" value="ex. 4' Philips T12">
+					<td> <input type="text" name="lampquantitiy" value="1" </td>
+					<td> <input =type"tedxt" name="watts"  </td>
+					<td> <select name="Ballasttype">
+							<option> Electronic </option>
+							<option> Magnetic </option>
+							<option> Universal </option>
+							<option> High Efficiency </option> 
+						</select>
+					</td>
+					<td> <input type="text" name="Ballastmodel" placeholder="Ballast Info">
+					</td>
+					<td> <select name="control">
+							<option> Dimmer </option>
+							<option> Light Sensor </option>
+							<option> Motion Sensor </option>
+							<option> Timer </option>
+							<option> Other </option> 
+						</select>
+					</td>
+			    </tr>
+			    <tr>
+					<td> <input type="text" name="Location" placeholder="Location"</td>
+					<td> <select name="Fixture"> 
+						<option> Troffer </option>
+						<option> Wrap </option>
+						<option> Flush </option>
+						<option> Other </option>
+						<option> Track </option>
+						<option> Recessed Can </option>
+						<option> Recessed Troffer </option>
+						<option> Wallpack </option>
+						<option> Exit </option>
+						<option> Wall Sconce </option>
+						<option> Chandelier </option>
+						<option> Emergency </option>
+					
+					</select>
+					</td>
+					<td> <input type="text" name="fixquantity" value="1" </td>
+					<td> <select name="lamp">
+						<option> CFL </option>
+						<option> Incandescent </option>
+						<option> Linear Fluorescent </option>
+						<option> LED </option>
+						<option> Circline Fluorescent </option>
+						<option> Other </option>
+						<option> U Bend Fluorescent </option>
+						<option> Halogen Incandescent </option>
+						<option> High Intensity Discharge </option> 
+						<option> Other </option>
+						</select> 
+					</td>
+					<td> <input type="text" name="lampinfo" value="ex. 4' Philips T12">
+					<td> <input type="text" name="lampquantitiy" value="1" </td>
+					<td> <input =type"tedxt" name="watts"  </td>
+					<td> <select name="Ballasttype">
+							<option> Electronic </option>
+							<option> Magnetic </option>
+							<option> Universal </option>
+							<option> High Efficiency </option> 
+						</select>
+					</td>
+					<td> <input type="text" name="Ballastmodel" placeholder="Ballast Info">
+					</td>
+					<td> <select name="control">
+							<option> Dimmer </option>
+							<option> Light Sensor </option>
+							<option> Motion Sensor </option>
+							<option> Timer </option>
+							<option> Other </option> 
+						</select>
+					</td>
+			    </tr>
+				</tbody>
 			</table>
 		</form>
 					
